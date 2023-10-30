@@ -20,6 +20,7 @@ var numero = '5(1)9-876-543-21';
 
 const nomesDiv = document.getElementById('nomes');
 
+// Exercício 1: Percorrer o objeto 'clientes' e mostrar os nomes de cada cliente no formato "ultimoSobrenome, primeiroNome"
 clientes.forEach((cliente) => {
   const nomeButton = document.createElement('button');
 
@@ -50,7 +51,7 @@ clientes.forEach((cliente) => {
   nomesDiv.appendChild(nomeButton);
 });
 
-
+// Exercício 2: Formatar a variável 'numero' para o formato "(XX)_X_XXXX-XXXX"
 const numeroDiv = document.getElementById('numero');
 const digitos = numero.match(/\d/g).join('');
 const numeroFormatado = `(${digitos.slice(0, 2)})_${digitos[2]}_${digitos.slice(3, 7)}-${digitos.slice(7)}`;
