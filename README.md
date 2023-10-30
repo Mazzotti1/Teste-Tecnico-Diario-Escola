@@ -60,7 +60,7 @@ O código HTML é estruturado da seguinte maneira:
 ## Instruções de Uso
 Para visualizar a página e as informações dos clientes:
 
-1. Abra o W3Schools Tryit Editor para rodar o código anexado.
+1. Abra o [W3Schools](https://www.w3schools.com/php/phptryit.asp?filename=tryphp_compiler) Tryit Editor para rodar o código anexado.
 
 2. Os clientes serão exibidos em caixas de estilo agradável, cada uma contendo o nome do cliente e sua data de nascimento.
 
