@@ -34,6 +34,10 @@
 
     $arrayDeClientes = [];
 
+// Questão 1:  Utilizando a variável $arrayDeClientes de um echo no nome do segundo cliente.
+echo $arrayDeClientes[1]->nome . "\n";
+
+// Questão 2: Utilize a estrutura de dados $arrayDeNascimento para adicionar na estrutura $arrayDeClientes a data de nascimento de cada cliente.
     foreach ($arrayDeNascimento as $nome => $dataNascimento) {
         $cliente = new stdClass();
         $cliente->nome = $nome;
@@ -41,6 +45,7 @@
         $arrayDeClientes[] = $cliente;
     }
 
+//Questão 3:  Faça a ordenação e impressão da estrutura $arrayDeClientes resultante do exercício 2 pela data de nascimento (pode ser ascendente ou descendente).
     function compararPorDataNascimento($a, $b) {
         $dataA = strtotime($a->dataNascimento);
         $dataB = strtotime($b->dataNascimento);
@@ -52,6 +57,7 @@
     foreach ($arrayDeClientes as $cliente) {
         echo '<div class="cliente-info">';
         echo '<h3>Informações do Cliente</h3>';
+        
         echo '<p><strong>Nome:</strong> ' . $cliente->nome . '</p>';
         echo '<p><strong>Data de Nascimento:</strong> ' . $cliente->dataNascimento . '</p>';
         echo '</div>';
